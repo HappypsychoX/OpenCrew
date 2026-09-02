@@ -13,6 +13,16 @@ Versioning semantics:
 
 ## [Unreleased]
 
+## [1.0.1]
+
+### Added
+
+- Parts Bin test application (React/Vite)
+
+### Changed
+
+- `crew-lead` OpenCode agent mode changed from `all` to `primary`
+
 ## [1.0.0]
 
 ### Added
