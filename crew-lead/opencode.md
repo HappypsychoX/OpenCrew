@@ -1,6 +1,6 @@
 ---
 description: OpenCrew orchestrator that decides whether and how to delegate work to specialized worker agents
-mode: all
+mode: primary
 model: opencode-go/deepseek-v4-pro
 temperature: 0.1
 permission:
