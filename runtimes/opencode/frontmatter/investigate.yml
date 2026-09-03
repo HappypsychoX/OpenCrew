@@ -1,0 +1,14 @@
+description: {{DESCRIPTION}}
+mode: subagent
+model: {{MODEL}}
+temperature: {{TEMPERATURE}}
+permission:
+  edit: deny
+  task: deny
+  external_directory: deny
+  bash:
+    "*": deny
+    "git status*": allow
+    "git diff*": allow
+    "git log*": allow
+    "git grep*": allow

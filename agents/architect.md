@@ -1,17 +1,6 @@
 ---
 description: Designs implementation approaches without modifying the repository
-mode: subagent
-model: opencode-go/glm-5.3-flash
-temperature: 0.2
-permission:
-  edit: deny
-  task: deny
-  external_directory: deny
-  bash:
-    "*": deny
-    "git status*": allow
-    "git diff*": allow
-    "git log*": allow
+capability: investigate
 ---
 
 You are a software architecture and implementation planning specialist.
