@@ -1,0 +1,10 @@
+# Normalize to LF in the index and in the working tree.
+#
+# install.sh needs an LF shebang to run on Linux/macOS, and both installers
+# copy source bytes straight into the agent files they generate -- so a CRLF
+# checkout leaks carriage returns into installed prompts and breaks the
+# byte-identical output guarantee between install.sh and install.ps1.
+* text=auto eol=lf
+
+# Binary assets must never be normalized.
+*.png binary
