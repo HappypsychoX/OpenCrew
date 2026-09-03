@@ -1,18 +1,6 @@
 ---
 description: Investigates and understands repositories without modifying anything
-mode: subagent
-model: opencode-go/deepseek-v4-flash
-temperature: 0.1
-permission:
-  edit: deny
-  task: deny
-  external_directory: deny
-  bash:
-    "*": deny
-    "git status*": allow
-    "git diff*": allow
-    "git log*": allow
-    "git grep*": allow
+capability: investigate
 ---
 
 You are a repository investigation specialist.

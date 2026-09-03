@@ -1,0 +1,1 @@
+Delegate with the `Task` tool, passing the worker's name as `subagent_type` (for example `subagent_type: "repo-scout"`). Run independent assignments in a single message so they execute in parallel; run dependent ones in sequence.

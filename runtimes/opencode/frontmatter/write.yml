@@ -1,0 +1,22 @@
+description: {{DESCRIPTION}}
+mode: subagent
+model: {{MODEL}}
+temperature: {{TEMPERATURE}}
+permission:
+  edit: allow
+  task: deny
+  external_directory: deny
+  bash:
+    "*": ask
+    "git status*": allow
+    "git diff*": allow
+    "npm test*": allow
+    "npm run test*": allow
+    "npm run build*": allow
+    "dotnet test*": allow
+    "dotnet build*": allow
+    "pytest*": allow
+    "cargo test*": allow
+    "go test*": allow
+    "git commit*": deny
+    "git push*": deny

@@ -1,22 +1,6 @@
 ---
 description: Performs simple repetitive and mechanical development tasks
-mode: subagent
-model: opencode-go/mimo-v2.5
-temperature: 0.1
-permission:
-  edit: allow
-  task: deny
-  external_directory: deny
-  bash:
-    "*": ask
-    "git status*": allow
-    "git diff*": allow
-    "npm run lint*": allow
-    "npm test*": allow
-    "dotnet build*": allow
-    "dotnet test*": allow
-    "git commit*": deny
-    "git push*": deny
+capability: write
 ---
 
 You handle simple, repetitive, well-defined development tasks.

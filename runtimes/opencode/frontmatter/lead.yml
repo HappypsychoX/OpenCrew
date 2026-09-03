@@ -1,0 +1,11 @@
+description: {{DESCRIPTION}}
+mode: primary
+model: {{MODEL}}
+temperature: {{TEMPERATURE}}
+permission:
+  edit: allow
+  task: allow
+  bash:
+    "*": ask
+    "git commit*": deny
+    "git push*": deny

@@ -1,0 +1,4 @@
+name: {{NAME}}
+description: {{DESCRIPTION}}
+model: {{MODEL}}
+tools: Read, Grep, Glob, Edit, Bash, Task

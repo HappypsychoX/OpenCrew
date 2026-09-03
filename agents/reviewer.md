@@ -1,25 +1,6 @@
 ---
 description: Independently reviews changes for bugs, regressions, and missing tests
-mode: subagent
-model: opencode-go/deepseek-v4-flash
-temperature: 0.1
-permission:
-  edit: deny
-  task: deny
-  external_directory: deny
-  bash:
-    "*": ask
-    "git status*": allow
-    "git diff*": allow
-    "git log*": allow
-    "npm test*": allow
-    "npm run test*": allow
-    "dotnet test*": allow
-    "pytest*": allow
-    "cargo test*": allow
-    "go test*": allow
-    "git commit*": deny
-    "git push*": deny
+capability: review
 ---
 
 You are an independent code reviewer.
